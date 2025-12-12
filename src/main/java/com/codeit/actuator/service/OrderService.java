@@ -53,8 +53,8 @@ public class OrderService {
 
         // 주문 취소 카운터
         this.ordercancelledCounter =
-            Counter.builder("orders.amount")
-                .description("Distribution of order amounts")
+            Counter.builder("orders.cancelled")
+                .description("Total number of orders cancelled")
                 .baseUnit("KRW")
                 .register(meterRegistry);
 
