@@ -1,3 +1,21 @@
+info:
+  app:
+    name: My Shopping Mall
+    description: E-commerce platform for fashion items
+    version: 1.0.0
+    encoding: UTF-8
+    java-version: 17
+
+  company:
+    name: MyCompany
+    email: support@mycompany.com
+    website: https://mycompany.com
+
+  team:
+    developer: Backend Team
+    manager: John Doe
+    contact: backend-team@mycompany.com
+
 spring:
   application:
     name: Shopping Mall API
@@ -6,7 +24,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
-    password: postgres
+    password: 84908637
     driver-class-name: org.postgresql.Driver
 
   # JPA 설정
@@ -42,6 +60,10 @@ management:
   endpoint:
     health:
       show-details: always # 개발 환경에서는 always, 운영에서는 when-authorized
+
+  info:
+    env:
+      enabled: true
 
   server:
     port: 9090 # Actuator 전용 포트 (방화벽으로 막음)
